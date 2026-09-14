@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kush ♡</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#fff7f9;color:#402a34;font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;padding:15px;text-align:center;background:#fff7f9dd;backdrop-filter:blur(10px)}
+nav a{margin:0 13px;text-decoration:none;color:#825365;font:11px Arial,sans-serif;letter-spacing:2px}
+section{min-height:100vh;padding:110px 22px 70px;position:relative}
+.hero{display:flex;align-items:center;justify-content:center;text-align:center}
+.hero>div{max-width:820px}
+.tiny{text-transform:uppercase;letter-spacing:3px;font:11px Arial,sans-serif;color:#a66b7d}
+h1{font-size:clamp(55px,11vw,110px);line-height:.9;color:#713e52;margin:25px 0}
+.hero p{font-size:19px;line-height:1.6}
+button{border:1px solid #c992a4;background:#fff;color:#7a4d5e;border-radius:999px;padding:12px 21px;cursor:pointer;font:12px Arial,sans-serif;transition:.25s}
+button:hover{transform:translateY(-3px);box-shadow:0 8px 20px #8b50631f}
+.heart{font-size:70px;animation:pulse 1.6s infinite;cursor:pointer;user-select:none}
+@keyframes pulse{50%{transform:scale(1.13)}}
+.wrap{max-width:900px;margin:auto}
+.title{text-align:center;font-size:48px;color:#713e52}
+.sub{text-align:center;color:#896b76;font:13px Arial,sans-serif;margin-bottom:40px}
+.letter{background:#fff;padding:40px;border:1px solid #efd8df;box-shadow:0 18px 45px #713e5210;line-height:1.85;font-size:17px}
+.signature{text-align:right;font-style:italic;color:#9b5e72;font-size:22px}
+.memory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.memory{min-height:190px;border-radius:20px;background:#f2dce4;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;cursor:pointer;transition:.3s;border:1px solid #e2bdc9}
+.memory:hover{transform:rotate(-1deg) scale(1.03)}
+.memory .back{display:none}.memory.open .front{display:none}.memory.open .back{display:block}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;padding:25px;border-radius:20px;text-align:center;border:1px solid #efd8df;transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.reveal{display:none;margin-top:25px;padding:20px;text-align:center;background:#fff;border:1px solid #efd8df;border-radius:18px;font-size:18px;line-height:1.6}
+.reveal.show{display:block}
+.final{text-align:center;display:flex;align-items:center;justify-content:center}
+.final h2{font-size:clamp(42px,8vw,78px);color:#713e52}
+.confetti{position:fixed;z-index:50;pointer-events:none;font-size:25px;animation:fall 1.8s ease-out forwards}
+@keyframes fall{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(90vh) rotate(500deg);opacity:0}}
+#counter{font:12px Arial,sans-serif;color:#9a6c79;margin-top:18px}
+#secret{opacity:0;transition:1s;margin-top:20px;color:#9b5e72}
+#secret.show{opacity:1}
+footer{text-align:center;padding:25px;font:11px Arial,sans-serif;color:#a47b89}
+@media(max-width:650px){.memory-grid,.cards{grid-template-columns:1fr}.letter{padding:25px}nav a{margin:0 5px;font-size:9px}}
+
+.birthday-link{
+  display:inline-block;
+  margin:8px 0 16px;
+  color:inherit;
+  text-decoration:underline;
+  text-underline-offset:4px;
+  font-weight:600;
+  transition:opacity .2s ease, transform .2s ease;
+}
+.birthday-link:hover{
+  opacity:.75;
+  transform:translateY(-1px);
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#home">HOME</a><a href="#letter">LETTER</a><a href="#memories">MEMORIES</a><a href="#us">US</a><a href="#final">♡</a>
+</nav>
+
+<section id="home" class="hero">
+<div>
+<div class="tiny">Here's a little something I tried my best to make for you piu</div>
+<h1>Happy Birthday Kush ♡</h1>
+<p>A tiny corner of the internet made especially for you.</p>
+<div class="heart" onclick="celebrate()">♡</div>
+<button onclick="celebrate()">click the heart</button>
+<div id="counter">You've been clicked 0 times.</div>
+</div>
+</section>
+
+<section id="letter">
+<div class="wrap">
+<h2 class="title">A letter for you</h2>
+<p class="sub">because a text message simply wasn't enough ♡</p>
+<div class="letter">
+<p>Hello love,</p>
+<p>The most important day of the year is here yet again. You've reached 20 now, no longer a teenager, but most importantly, you're still the same sweetheart as you were when I met you back when you were in your final days of being 18. Why did you grow up so fast? You're still the little baby Kush who had the brightest smile and the cutest cheeks.</p>
+<p>Well listen, I know that making cute and aesthetic websites are your thing but I hope this was a pleasant surprise. I wish I could buy you every little thing you ever wanted or needed. I promise I will do that the second I start earning. I'll buy you a million kfc burgers.</p>
+<p>I hope this year brings you the kind of happiness you deserve, a million reasons to smile, and lots of moments that make you think that life is actually pretty good.</p>
+<p>Thank you for being you and thank you for making the distance worth it.</p>
+<p class="signature">- your piplup &lt;3</p>
+</div>
+</div>
+</section>
+
+<section id="memories">
+<div class="wrap">
+<h2 class="title">Little memories</h2>
+<p class="sub">tap each card to reveal a message ♡</p>
+<div class="memory-grid">
+<div class="memory" onclick="this.classList.toggle('open')"><div class="front">📸<br><br>Favourite photo</div><div class="back">I can never choose amongst your million pretty pictures</div></div>
+<div class="memory" onclick="this.classList.toggle('open')"><div class="front">💬<br><br>Favourite conversation</div><div class="back">My favourite conversations are those we have on late nights when either one of us can't talk on call</div></div>
+<div class="memory" onclick="this.classList.toggle('open')"><div class="front">❤️<br><br>Your prettiest creation</div><div class="back">All those creative doodles you draw in our chat makes my day</div></div>
+<div class="memory" onclick="this.classList.toggle('open')"><div class="front">🌙<br><br>Late-night calls</div><div class="back">Thank you for all the nights you stayed up to talk to me</div></div>
+<div class="memory" onclick="this.classList.toggle('open')"><div class="front">🍔<br><br>One million KFC burgers</div><div class="back">The promise is officially documented on the internet.</div></div>
+<div class="memory" onclick="this.classList.toggle('open')"><div class="front">🫶<br><br>Our babies</div><div class="back">bhau, meow, octopus and oshawott are all equally our little babies</div></div>
+</div>
+</div>
+</section>
+
+<section id="us">
+<div class="wrap">
+<h2 class="title">A few things...</h2>
+<p class="sub">a tiny appreciation corner</p>
+<div class="cards">
+<div class="card">☀️<h3>Your smile</h3><p>The prettiest one in the world.</p></div>
+<div class="card">🧸<h3>Little baby Kush</h3><p>Apparently he refuses to grow up in my head.</p></div>
+<div class="card">🌎<h3>The distance</h3><p>I'll still love you even if it's from across the world.</p></div>
+</div>
+<div style="text-align:center;margin-top:35px">
+<button onclick="reveal()">there's a secret here...</button>
+<div id="secret">I love when you sing and hum songs, it sounds so comforting and soothing ♡</div>
+</div>
+</div>
+</section>
+
+<section id="final" class="final">
+<div>
+<div class="heart" onclick="celebrate()">♡</div>
+<div class="tiny">one last thing</div>
+<h2>Happy Birthday,<br>Kush.</h2>
+<a class="birthday-link" href="https://canva.link/6wtdwk9kbkqrhws" target="_blank" rel="noopener noreferrer">Here's also a little scrapbook I made you :)</a>
+<p>Now go have the best birthday ever.</p>
+<button onclick="document.getElementById('home').scrollIntoView()">start again ♡</button>
+</div>
+</section>
+
+<footer>made with an unreasonable amount of love ♡</footer>
+
+<script>
+let clicks=0;
+function celebrate(){
+ clicks++;
+ document.getElementById('counter').textContent=`You've been clicked ${clicks} time${clicks===1?'':'s'}.`;
+ const symbols=['♡','♥','✦','✧'];
+ for(let i=0;i<22;i++){
+  const e=document.createElement('div');
+  e.className='confetti';
+  e.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  e.style.left=Math.random()*100+'vw';
+  e.style.top=(5+Math.random()*20)+'vh';
+  e.style.animationDelay=Math.random()*.3+'s';
+  document.body.appendChild(e);
+  setTimeout(()=>e.remove(),2100);
+ }
+}
+function reveal(){
+ document.getElementById('secret').classList.toggle('show');
+}
+</script>
+</body>
+</html>
